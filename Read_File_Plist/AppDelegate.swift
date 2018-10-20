@@ -12,17 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        let mainSB = UIStoryboard(name: "Main", bundle: nil)
-        let result = mainSB.instantiateViewController(withIdentifier: "result") as! ResultViewController
+        // check user default
         if UserDefaults.standard.object(forKey: "city") != nil  {
+            let mainSB = UIStoryboard(name: "Main", bundle: nil)
+            let result = mainSB.instantiateViewController(withIdentifier: "result") as? ResultViewController
+            result?.isShowrightButton = true
+            let navigation = UINavigationController(rootViewController: result!)
+//            result?.btnEdit = true
             window = UIWindow(frame: UIScreen.main.bounds)
-            window?.rootViewController = result
+            window?.rootViewController = navigation
+            //Hiển thị cửa sổ và biến nó thành cửa sổ chính.
             window?.makeKeyAndVisible()
-            
         }
         return true
     }

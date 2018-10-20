@@ -13,7 +13,7 @@
         <!--City-->
         <scene sceneID="374-4q-OEU">
             <objects>
-                <tableViewController id="Hs4-0L-t9M" customClass="TableViewController" customModule="Register" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="first" id="Hs4-0L-t9M" customClass="TableViewController" customModule="Register" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="acf-93-znp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +158,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <segue destination="eH6-oa-HTa" kind="show" id="X0K-Iw-IgV"/>
+                                    <segue destination="eH6-oa-HTa" kind="show" id="LSP-Uw-fQk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -228,16 +228,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oai-IL-EVD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="O42-Yq-MR1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="cgq-yu-IT2">
+                            <connections>
+                                <action selector="editFromFirst:" destination="eH6-oa-HTa" id="CeY-qT-dL6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="Age" destination="xc2-Aq-jOa" id="Zgg-89-Afm"/>
                         <outlet property="City" destination="oUS-5X-SvU" id="POv-Nw-pfd"/>
                         <outlet property="District" destination="evZ-o1-QJ7" id="SGY-AW-0o6"/>
                         <outlet property="Gender" destination="i64-oC-b7B" id="CYc-i6-i0t"/>
+                        <outlet property="btnEdit" destination="cgq-yu-IT2" id="DcY-im-fP3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbR-fo-xRH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2918" y="-260"/>
+            <point key="canvasLocation" x="2972" y="-260.41979010494754"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PP2-sR-tiL">

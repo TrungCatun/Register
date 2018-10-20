@@ -72,10 +72,10 @@
 		E75C1937216D12A10040211E /* Read_File_Plist */ = {
 			isa = PBXGroup;
 			children = (
+				E75C1938216D12A10040211E /* AppDelegate.swift */,
 				E78D1478216F4A0F00324923 /* Model */,
 				E78D146F216F3C7600324923 /* Controller */,
 				E78D146E216F3C6C00324923 /* View */,
-				E75C1938216D12A10040211E /* AppDelegate.swift */,
 				E75C193C216D12A10040211E /* Main.storyboard */,
 				E75C193F216D12A10040211E /* Assets.xcassets */,
 				E75C1941216D12A10040211E /* LaunchScreen.storyboard */,
