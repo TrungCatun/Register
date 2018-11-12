@@ -47,6 +47,7 @@ class TableViewController: UITableViewController {
         if segue.destination is DictrictTableViewController {
             if let indexPath = tableView.indexPathForSelectedRow{
                 LoadData.share.selectedCity = newCities[indexPath.row]
+                
                 UserDefaults.standard.set((newCities[indexPath.row]).name, forKey: "city")
             }
         }

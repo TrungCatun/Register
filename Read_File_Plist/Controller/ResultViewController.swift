@@ -34,9 +34,6 @@ class ResultViewController: UIViewController {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()
-//        window?.becomeKey()
-//        window?.resignKey()
-//        window?.makeKey()
         
     }
     
